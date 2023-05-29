@@ -8,45 +8,34 @@
     <link rel="stylesheet" href="index.html">
 </head>
 <body>
-    <p>
-        <label for="nombre" class="colocar_nombre">Name
-          <span class="obligatorio"></span>
-        </label>
-          <input type="text" name="introducir_nombre" id="nombre" required="obligatorio"
-           placeholder="Enter your name">
-      </p>
-    
+  <form>
+    <label for="fname">Name:</label><br>
+    <input type="text" id="fname" name="fname" placeholder=" Enter you name"><br>
+    <label for="email">Email:</label><br>
+    <input type="text" id="email" name="email" placeholder="Enter your email"><br>
+    <label for="age">Age:</label><br>
+    <input type="age" id="age" name="age" placeholder="Enter your Age"><br>
+</form>    
       <p>
-        <label for="email" class="colocar_email">Email
-          <span class="obligatorio"></span>
-        </label>
-          <input type="email" name="introducir_email" id="email" required="obligatorio"
-           placeholder="Enter your Email">
-      </p>
-  
-      <p>
-        <label for="telefone" class="colocar_telefono">Age
-        </label>
-          <input type="tel" name="introducir_telefono" id="telefono" placeholder="Enter your age">
-      </p>    
-      <p>
-        <label for="Which" class="Which">Which best option describes you?
-        </label>
-          <input type="Which" name="Which" id="Which" placeholder="Select">
+        <label for="select">Select</label><br>
+        <select name="describes" id="select">
+        <option value="student">Student</option> 
+        </select>
       </p> 
       
       <p>Would you recommend this site</p>
-      <form>
-        <input type="radio" id="html" name="Would" value="yes">
-        <label for="yes">Yes</label><br>
-        <input type="radio" id="css" name="Would" value="no">
-        <label for="css">No</label><br>
-        <input type="radio" id="maybe name="Would" value="maybe">
-        <label for="maybe">Maybe</label>
-      </form>
 
-      <P>Language and Frameworks known (Check all that apply)</P>
-      <form>
+      <form1>
+         <input type="radio" id="yes" name="Would" value="yes">
+         <label for="yes">Yes</label><br>
+         <input type="radio" id="no" name="Would" value="no">
+         <label for="no">No</label><br>
+         <input type="radio" id="maybe" name="Would" value="maybe">
+         <label for="maybe">Maybe</label>
+      </form1> 
+
+      <p>Language and Frameworks known (Check all that apply)</p>
+      <form2>
         <input type="checkbox" id="c" name="c" value="c">
         <label for="c"> C</label><br>
         <input type="checkbox" id="C++" name="C++" value="C++">
@@ -67,7 +56,16 @@
         <label for="Django"> Django</label><br>
         <input type="checkbox" id="Spring" name="Spring" value="Spring">
         <label for="Spring"> Spring</label><br>
-      </form>
+      </form2>
 
+
+      <p><label for="any">Any comments or suggestions</label><br>
+        <textarea name="any" id="any" rows="6" cols="60"></textarea>
+        </p>
+
+        <button type="submit">
+
+          <b>Submit</b><br/>
+        </button>
 </body>
 </html>
